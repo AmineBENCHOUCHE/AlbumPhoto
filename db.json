@@ -1,5 +1,26 @@
 {
-    "users": [],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "name": "Rita Kessler",
+      "id": 4
+    },
+    {
+      "name": "Charlie Brown",
+      "id": 5
+    },
+    {
+      "name": "Tami Parker",
+      "id": 6
+    },
+    {
+      "name": "Gretchen Pollich",
+      "id": 15
+    },
+    {
+      "name": "Stacy Kohler",
+      "id": 16
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
