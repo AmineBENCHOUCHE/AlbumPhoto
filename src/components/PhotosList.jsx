@@ -37,7 +37,9 @@ const PhotosList = ({ album }) => {
         onClick={handleAddPhoto}
         className="flex justify-between w-full items-center m-2"
       >
-        <h3 className="text-lg font-bold">Photos in Album {album.title}</h3>
+        {data?.length !== 0 && (
+          <h3 className="text-lg font-bold">Photos in Album {album.title}</h3>
+        )}
         <Button
           primary
           rounded

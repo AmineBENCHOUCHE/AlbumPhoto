@@ -74,6 +74,11 @@
       "userId": 6,
       "title": "Handcrafted Wooden Mouse",
       "id": 13
+    },
+    {
+      "userId": 17,
+      "title": "Ergonomic Fresh Towels",
+      "id": 14
     }
   ],
   "photos": [
@@ -191,6 +196,11 @@
       "albumId": 12,
       "url": "https://loremflickr.com/150/150/abstract?lock=54418",
       "id": 41
+    },
+    {
+      "albumId": 13,
+      "url": "https://loremflickr.com/150/150/abstract?lock=61775",
+      "id": 42
     }
   ]
 }

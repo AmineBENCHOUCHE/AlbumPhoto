@@ -32,7 +32,7 @@ const AlbumsList = ({ user }) => {
   }
 
   return (
-    <div className="flex flex-col justify-between w-full">
+    <div className="flex flex-col justify-between items-center w-full">
       <div className="flex justify-between items-center w-full m-2 ">
         <h3 className="text-lg font-semibold ml-2">Albums for {user.name}</h3>
         <Button

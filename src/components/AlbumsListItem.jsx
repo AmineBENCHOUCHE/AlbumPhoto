@@ -10,7 +10,7 @@ const AlbumsListItem = ({ album }) => {
     removeAlbum(album);
   }
   const header = (
-    <div className="ml-2 flex p-1">
+    <div className="ml-2 flex ">
       <Button
         loading={results.isLoading}
         onClick={handleDeleteAlbum}
