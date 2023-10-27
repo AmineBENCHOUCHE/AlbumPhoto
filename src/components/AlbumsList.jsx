@@ -1,38 +1,42 @@
 import Button from "./Button";
-import Panel from "./Panel";
 import Skeleton from "./Skeleton";
 
 import { BiAddToQueue } from "react-icons/bi";
-import ExpandablePanel from "./ExpandablePanel";
-import { useFetchAlbumsQuery } from "../store";
+import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
+import AlbumsListItem from "./AlbumsListItem";
 
 const AlbumsList = ({ user }) => {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
-  //   console.log(data);
+  //fetch data
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
+  // console.log(data);
 
-  function handleAddAlbum() {}
+  // Add album
+  const [addAlbum, results] = useAddAlbumMutation();
+
+  // Remove Album
+
+  function handleAddAlbum() {
+    addAlbum(user);
+    console.log(results);
+  }
+
   let content;
-  if (isLoading) {
-    content = <Skeleton times={3} />;
+  if (isFetching) {
+    content = <Skeleton times={3} className="w-full h-10" />;
   } else if (error) {
     content = <div>Error loading albums ...</div>;
   } else {
     content = data.map((album) => {
-      const header = <div>{album.title}</div>;
-      return (
-        <ExpandablePanel key={album.id} header={header}>
-          List of photos in the album
-        </ExpandablePanel>
-      );
+      return <AlbumsListItem key={album.id} album={album} />;
     });
   }
 
   return (
     <div className="flex flex-col justify-between w-full">
-      <div className="flex justify-between items-center w-full ">
-        Albums for {user.name}
+      <div className="flex justify-between items-center w-full m-2 ">
+        <h3 className="text-lg font-semibold">Albums for {user.name}</h3>
         <Button
-          loading={false}
+          loading={results.isLoading}
           primary
           onClick={handleAddAlbum}
           className="flex gap-2 items-center"
