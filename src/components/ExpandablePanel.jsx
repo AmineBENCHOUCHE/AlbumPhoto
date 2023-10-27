@@ -7,11 +7,15 @@ const ExpandablePanel = ({ header, children }) => {
     setExpanded(!expanded);
   }
   return (
-    <div className="mb-2 rounded border w-full">
-      <div className="flex p-2 gap-2 justify-between items-center ">
+    <div className="mb-3 rounded border w-full bg-gray-100  px-10 py-2">
+      <div className="flex p-2 gap-2 justify-between items-center bg-white mt-2">
         <div className="flex items-center justify-between">{header}</div>
         <div onClick={handleClick} className="cursor-pointer">
-          {expanded ? <GoChevronDown /> : <GoChevronLeft />}
+          {expanded ? (
+            <GoChevronDown className="hover:scale-[2]" />
+          ) : (
+            <GoChevronLeft className="hover:scale-[2]" />
+          )}
         </div>
       </div>
       {expanded && <div className="p-2 border-t flex">{children}</div>}

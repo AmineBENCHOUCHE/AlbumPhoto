@@ -12,7 +12,11 @@ const UserListItem = ({ user }) => {
   };
   const header = (
     <>
-      <Button loading={isLoading} onClick={handleDelete}>
+      <Button
+        loading={isLoading}
+        onClick={handleDelete}
+        className="hover:border-2 hover:border-red-300 hover:rounded"
+      >
         <GoTrash className="text-red-600 h-8 w-8" />
       </Button>
       {error && <div>Error deleting user ...</div>}

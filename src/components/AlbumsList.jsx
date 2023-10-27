@@ -34,12 +34,13 @@ const AlbumsList = ({ user }) => {
   return (
     <div className="flex flex-col justify-between w-full">
       <div className="flex justify-between items-center w-full m-2 ">
-        <h3 className="text-lg font-semibold">Albums for {user.name}</h3>
+        <h3 className="text-lg font-semibold ml-2">Albums for {user.name}</h3>
         <Button
           loading={results.isLoading}
           primary
+          rounded
           onClick={handleAddAlbum}
-          className="flex gap-2 items-center"
+          className="flex gap-2  items-center hover:bg-blue-700"
         >
           <BiAddToQueue /> Add albums
         </Button>

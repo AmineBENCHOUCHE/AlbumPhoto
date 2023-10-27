@@ -10,11 +10,11 @@ const AlbumsListItem = ({ album }) => {
     removeAlbum(album);
   }
   const header = (
-    <div className="ml-5 flex">
+    <div className="ml-2 flex p-1">
       <Button
         loading={results.isLoading}
         onClick={handleDeleteAlbum}
-        className="mr-2"
+        className="mr-2 p-1 hover:border-2 hover:rounded hover:border-red-200"
       >
         <GoTrash className="text-red-600 h-8 w-8" />
       </Button>

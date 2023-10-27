@@ -40,7 +40,8 @@ const PhotosList = ({ album }) => {
         <h3 className="text-lg font-bold">Photos in Album {album.title}</h3>
         <Button
           primary
-          className="flex gap-2 items-center"
+          rounded
+          className="flex gap-2 items-center hover:bg-blue-700"
           loading={addPhotoResults.isLoading}
         >
           <BiAddToQueue />
