@@ -9,7 +9,7 @@ const fetchUsers = createAsyncThunk("users/fetch", async () => {
   return reponse.data;
 });
 
-//TODO DEV ONLY to remmove before production
+//TODO DEV ONLY to remove before production
 const pause = (duration) => {
   return new Promise((resolve) => {
     setTimeout(resolve, duration);

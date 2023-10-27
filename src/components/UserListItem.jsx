@@ -1,6 +1,5 @@
 import Button from "./Button";
 import { GoTrash } from "react-icons/go";
-import { VscTriangleDown } from "react-icons/vsc";
 import { removeUser } from "../store";
 import { useThunk } from "../hooks/useThunk";
 import ExpandablePanel from "./ExpandablePanel";

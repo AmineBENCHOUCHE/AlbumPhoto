@@ -1,26 +1,153 @@
 {
   "users": [
     {
-      "name": "Rita Kessler",
-      "id": 4
-    },
-    {
-      "name": "Charlie Brown",
-      "id": 5
-    },
-    {
       "name": "Tami Parker",
       "id": 6
     },
     {
-      "name": "Gretchen Pollich",
+      "name": "Stacy Kohler",
+      "id": 16
+    },
+    {
+      "name": "Grace Bednar Sr.",
+      "id": 17
+    },
+    {
+      "name": "Marian Mitchell",
+      "id": 18
+    },
+    {
+      "name": "Ollie Powlowski",
+      "id": 19
+    }
+  ],
+  "albums": [
+    {
+      "userId": 6,
+      "title": "Generic Steel Shirt",
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "title": "Electronic Rubber Ball",
+      "id": 4
+    },
+    {
+      "userId": 16,
+      "title": "Recycled Rubber Chips",
+      "id": 7
+    },
+    {
+      "userId": 6,
+      "title": "Handcrafted Metal Keyboard",
+      "id": 8
+    },
+    {
+      "userId": 16,
+      "title": "Unbranded Plastic Gloves",
+      "id": 9
+    },
+    {
+      "userId": 18,
+      "title": "Handcrafted Rubber Car",
+      "id": 10
+    },
+    {
+      "userId": 18,
+      "title": "Intelligent Soft Table",
+      "id": 11
+    },
+    {
+      "userId": 6,
+      "title": "Ergonomic Soft Mouse",
+      "id": 12
+    },
+    {
+      "userId": 6,
+      "title": "Handcrafted Wooden Mouse",
+      "id": 13
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=31147",
+      "id": 1
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=79366",
+      "id": 2
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=72104",
+      "id": 4
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=50493",
+      "id": 5
+    },
+    {
+      "albumId": 9,
+      "url": "https://loremflickr.com/150/150/abstract?lock=89302",
+      "id": 6
+    },
+    {
+      "albumId": 9,
+      "url": "https://loremflickr.com/150/150/abstract?lock=92014",
+      "id": 7
+    },
+    {
+      "albumId": 9,
+      "url": "https://loremflickr.com/150/150/abstract?lock=84237",
+      "id": 8
+    },
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=29591",
+      "id": 10
+    },
+    {
+      "albumId": 4,
+      "url": "https://loremflickr.com/150/150/abstract?lock=31071",
+      "id": 11
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=63612",
+      "id": 14
+    },
+    {
+      "albumId": 3,
+      "url": "https://loremflickr.com/150/150/abstract?lock=46419",
       "id": 15
     },
     {
-      "name": "Stacy Kohler",
-      "id": 16
+      "albumId": 4,
+      "url": "https://loremflickr.com/150/150/abstract?lock=33483",
+      "id": 23
+    },
+    {
+      "albumId": 8,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8925",
+      "id": 26
+    },
+    {
+      "albumId": 8,
+      "url": "https://loremflickr.com/150/150/abstract?lock=87150",
+      "id": 27
+    },
+    {
+      "albumId": 4,
+      "url": "https://loremflickr.com/150/150/abstract?lock=71146",
+      "id": 29
+    },
+    {
+      "albumId": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=40690",
+      "id": 33
     }
-  ],
-  "albums": [],
-  "photos": []
+  ]
 }
